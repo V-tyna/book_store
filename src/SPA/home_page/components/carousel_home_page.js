@@ -1,9 +1,3 @@
-// const imagesUrlArr = [
-//     'https://images.unsplash.com/photo-1591925323327-2b12e3f3fcc2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80',
-//     'https://images.unsplash.com/photo-1563210426-e5902fa57376?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80',
-//     'https://images.unsplash.com/photo-1517414204284-fb7e98b2e255?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80'
-// ];
-
 import img1 from './carousel_images/photo-1563210426-e5902fa57376.jpg';
 import img2 from './carousel_images/photo-1517414204284-fb7e98b2e255.jpg';
 import img3 from './carousel_images/photo-1519682337058-a94d519337bc.jpg';

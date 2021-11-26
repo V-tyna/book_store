@@ -6,7 +6,6 @@ import './css/SPA_styles.css';
 import './css/specific_book.css';
 import './modules/routing.js';
 import {initializeApp} from 'firebase/app';
-import {getFromDatabase} from './modules/get_data_from_database.js';
 
 const firebaseConfig = {
     apiKey: "AIzaSyDIWpLf1jb6NCiktkGsPZJ2Z7a88RZ20kY",

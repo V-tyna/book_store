@@ -13,7 +13,7 @@
 }
 
 .specific-book li span {
-    font-family: 'Sanches-bold';
+    font-family: 'Sanches-bold', sans-serif;
     color: #494949;
 }
 

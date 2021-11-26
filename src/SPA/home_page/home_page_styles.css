@@ -60,3 +60,39 @@
     margin-bottom: 30px;
     font-size: 20px;
 }
+
+.hits {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+}
+
+.best-book {
+    margin: 20px;
+    width: 250px;
+}
+
+.best-book .book-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.best-book .book-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.best-book .book-data p {
+    margin: 5px;
+}
+
+.best-book .book-data p:last-child {
+    font-family: 'Sanches-bold', sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Sanches-bold', sans-serif;
+    margin-bottom: 20px;
+}
