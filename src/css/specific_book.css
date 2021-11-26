@@ -1,0 +1,19 @@
+.specific-book {
+    margin: 20px;
+    padding-right: 20px;
+}
+
+.specific-book .book-image {
+    display: flex;
+    justify-content: center;
+}
+
+.specific-book li {
+    list-style-type: none;
+}
+
+.specific-book li span {
+    font-family: 'Sanches-bold';
+    color: #494949;
+}
+

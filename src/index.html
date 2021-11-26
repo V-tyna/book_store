@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book store</title>
+</head>
+<body>
+<header>
+
+    <div class="header-block-area">
+        <a href="#" id="menu-burger">
+            <img class="icon-menu" src="https://firebasestorage.googleapis.com/v0/b/book-store-e9483.appspot.com/o/icons%2Fmenu.png?alt=media&token=1cd6655e-40a1-4eda-ae39-b46bbcfe48f9" alt="Menu">
+        </a>
+        <a class="header-link" href="/home">Home</a>
+    </div>
+    <form id="search-form">
+        <input type="search" placeholder="Search" aria-label="Search">
+        <button id="btn-search" type="submit">Search</button>
+    </form>
+    <div class="header-block-area">
+        <a class="header-link" href="#">Favorite</a>
+        <a href="#" id="basket">
+            <img class="icon-basket" src="https://firebasestorage.googleapis.com/v0/b/book-store-e9483.appspot.com/o/icons%2Fshopping-bag-512px.png?alt=media&token=8c5cebbe-8153-45af-915f-3e4814964567" alt="Shopping basket">
+        </a>
+    </div>
+
+</header>
+
+<div id="aside-root-container">
+    <aside id="books-menu">
+        <ul>
+            <li>
+                <div class="dropdown">
+                    <a href="/fiction">Fiction</a>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/book-store-e9483.appspot.com/o/icons%2Fplay.png?alt=media&token=121eaf6c-6018-44af-8c33-47a2a0b24f02" alt="arrow to sections">
+                    <div class="dropdown-content">
+                        <a href="/scifi">Sci-Fi & Fantasy</a>
+                        <a href="/horror">Horror</a>
+                        <a href="/classic">Classic</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/textbooks">Textbooks</a>
+            </li>
+            <li>
+                <a href="/hobby">Home & Hobby</a>
+            </li>
+            <li>
+                <a href="/children">Children's Books</a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="/comics">Comics</a>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/book-store-e9483.appspot.com/o/icons%2Fplay.png?alt=media&token=121eaf6c-6018-44af-8c33-47a2a0b24f02" alt="arrow to sections">
+                    <div class="dropdown-content comics">
+                        <a href="/marvel">Marvel</a>
+                        <a href="/dc">DC</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </aside>
+
+    <div id="root"></div>
+</div>
+
+<footer></footer>
+
+</body>
+</html>

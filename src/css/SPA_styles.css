@@ -1,0 +1,86 @@
+.SPA-page {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: flex-start;
+}
+
+.dc {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: flex-start;
+}
+
+.category-menu {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.category-menu img {
+    width: 70px;
+    height: 70px;
+}
+
+.category-menu a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #494949;
+    width: 130px;
+}
+
+.cards-container {
+    width: 250px;
+    display: flex;
+    flex-flow: wrap column;
+    align-content: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #EAE7DC;
+    border-radius: 10px;
+}
+
+.book-image {
+    margin: 0 auto;
+}
+
+.book-image img {
+    width: 200px;
+    height: 300px;
+}
+
+.add-to-fav-area {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.add-to-fav {
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+}
+
+.add-to-basket {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-buy {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    font-size: 16px;
+    background-color: #D8C3A5;
+    border: 1px solid #D8C3A5;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.btn-buy div {
+    margin-right: 5px;
+}
