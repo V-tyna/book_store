@@ -1,18 +1,22 @@
-import {getFromDatabase} from './get_data_from_database.js';
+import {buyBook} from './buy_button_listener.js';
+import {addBookToFavorite} from './fav_button_listener.js';
 
 let pathID;
 
-async function bookData(path) {
-    const response = await getFromDatabase(path);
-    return response;
-}
-
-export function listenerConcreteBook(divElem, path) {
-    const root = document.getElementById('root');
-    root.addEventListener('click', (e) => {
+export function listenerConcreteBook(path) {
+    const page = document.querySelector('.SPA-page');
+    page.addEventListener('click', (e) => {
         const specificCard = e.target.closest('.cards-container');
-        const id = specificCard.children[2].id;
+        const buyButton = e.target.closest('.btn-buy-area');
+        const favButton = e.target.closest('.add-to-fav');
+        const id = specificCard.children[1].id;
+
         pathID = `${path}/${id}`;
-        divElem.renderSpecificBookPage(bookData(pathID));
+        if(buyButton) {
+            buyBook(pathID);
+        }
+        if(favButton) {
+            addBookToFavorite(pathID);
+        }
     });
 }

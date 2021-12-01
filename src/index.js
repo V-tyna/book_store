@@ -4,6 +4,7 @@ import './css/footer.css';
 import './SPA/home_page/home_page_styles.css';
 import './css/SPA_styles.css';
 import './css/specific_book.css';
+import './SPA/favorite_page/favorite_page.css';
 import './modules/routing.js';
 import {initializeApp} from 'firebase/app';
 

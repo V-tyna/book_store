@@ -7,7 +7,7 @@ export function specificBookTemplate(book) {
             <div class="book-image">
                 <img src="${book.picture}" alt="${book.bookName}">
             </div> 
-            <div class="book-data">
+            <div class="book-data" id="${book.id}">
                     <ul>
                         <li><span>Title: </span>"${book.bookName}",</li>
                         <li><span>Authors: </span>${book.authors},</li>
@@ -25,6 +25,6 @@ export function specificBookTemplate(book) {
                     <img class="add-to-basket" src="https://firebasestorage.googleapis.com/v0/b/book-store-e9483.appspot.com/o/icons%2Fshopping-cart.png?alt=media&token=b3202f0a-93d5-4c94-aadd-9c2bd425bde6" alt="Add to basket icon">
                 </button>
             </div>
-        </div>    
+       </div>
     `;
 }

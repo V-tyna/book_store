@@ -17,7 +17,7 @@ export function horrorPageRoute() {
     setTimeout(() => {
         const blockWithCard = new Book('.SPA-page');
         blockWithCard.renderBookCards(createArrayFromGetData());
-        listenerConcreteBook(blockWithCard, horrorDataPath);
+        listenerConcreteBook(horrorDataPath);
     }, 0);
     return fillRootDiv;
 }

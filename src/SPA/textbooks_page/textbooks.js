@@ -17,7 +17,7 @@ export function textbooksPageRoute() {
     setTimeout(() => {
         const blockWithCard = new Book('.SPA-page');
         blockWithCard.renderBookCards(createArrayFromGetData());
-        listenerConcreteBook(blockWithCard, textbooksDataPath);
+        listenerConcreteBook(textbooksDataPath);
     }, 0);
     return fillRootDiv;
 }

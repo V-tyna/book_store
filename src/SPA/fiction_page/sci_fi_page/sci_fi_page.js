@@ -17,7 +17,7 @@ export function sciFiPageRoute() {
     setTimeout(() => {
         const blockWithCard = new Book('.SPA-page');
         blockWithCard.renderBookCards(createArrayFromGetData());
-        listenerConcreteBook(blockWithCard, sciFiDataPath);
+        listenerConcreteBook(sciFiDataPath);
     }, 0);
     return fillRootDiv;
 }

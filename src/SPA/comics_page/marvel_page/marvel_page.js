@@ -17,7 +17,7 @@ export function marvelPageRoute() {
     setTimeout(() => {
         const blockWithCard = new Book('.SPA-page');
         blockWithCard.renderBookCards(createArrayFromGetData());
-        listenerConcreteBook(blockWithCard, marvelDataPath);
+        listenerConcreteBook(marvelDataPath);
     }, 0);
     return fillRootDiv;
 }

@@ -5,6 +5,11 @@
     justify-content: flex-start;
 }
 
+.SPA-page a {
+    text-decoration: none;
+    color: #494949;
+}
+
 .dc {
     width: 100%;
     display: flex;
@@ -63,6 +68,7 @@
     width: 30px;
     height: 30px;
     margin-right: 0;
+    cursor: pointer;
 }
 
 .add-to-basket {
@@ -79,6 +85,7 @@
     border: 1px solid #D8C3A5;
     border-radius: 3px;
     padding: 5px 10px;
+    cursor: pointer;
 }
 
 .btn-buy div {

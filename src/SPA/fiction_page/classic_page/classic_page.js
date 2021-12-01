@@ -17,7 +17,7 @@ export function classicPageRoute() {
     setTimeout(() => {
         const blockWithCard = new Book('.SPA-page');
         blockWithCard.renderBookCards(createArrayFromGetData());
-        listenerConcreteBook(blockWithCard, classicDataPath);
+        listenerConcreteBook(classicDataPath);
     }, 0);
     return fillRootDiv;
 }

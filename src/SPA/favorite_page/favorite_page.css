@@ -1,0 +1,16 @@
+.fav-list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
+}
+
+.fav-list-container div {
+    margin-right: 15px;
+}
+
+.fav-temp-img {
+    width: 40px;
+    margin-right: 20px;
+}

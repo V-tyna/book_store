@@ -17,7 +17,7 @@ export function hobbyPageRoute() {
     setTimeout(() => {
         const blockWithCard = new Book('.SPA-page');
         blockWithCard.renderBookCards(createArrayFromGetData());
-        listenerConcreteBook(blockWithCard, hobbyDataPath);
+        listenerConcreteBook(hobbyDataPath);
     }, 0);
     return fillRootDiv;
 }

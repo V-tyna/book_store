@@ -63,3 +63,65 @@ header {
 #menu-burger {
     text-decoration: none;
 }
+
+#favorite {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#favorite .likes {
+    font-size: 10px;
+    color: #494949;
+}
+
+.icon-fav {
+    width: 25px;
+    height: 25px;
+    margin-right: 3px;
+}
+
+.likes-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -5px;
+    bottom: 25px;
+    background-color: #E98074;
+    border-radius: 50%;
+}
+
+#basket {
+    text-decoration: none;
+    color: #494949;
+}
+
+.quantity-items-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.quantity-items-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 1px;
+    bottom: 15px;
+    background-color: #AFD275;
+    border-radius: 50%;
+}
+
+.quantity-items {
+    text-align: center;
+    font-size: 10px;
+}

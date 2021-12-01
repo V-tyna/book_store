@@ -1,19 +1,27 @@
-.specific-book {
+.specific-book{
     margin: 20px;
-    padding-right: 20px;
+    padding: 10px;
 }
 
-.specific-book .book-image {
+.specific-book .book-image, a .book-image {
     display: flex;
     justify-content: center;
 }
 
-.specific-book li {
+a li {
     list-style-type: none;
 }
 
-.specific-book li span {
+a li span {
     font-family: 'Sanches-bold', sans-serif;
     color: #494949;
 }
 
+.book-data {
+    margin-left: 20px;
+}
+
+.book-data p {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}

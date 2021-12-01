@@ -9,6 +9,9 @@ import {childrenPageRoute} from '../SPA/children\'s_books_page/children_page.js'
 import {comicsPageRoute} from '../SPA/comics_page/comics_page.js';
 import {marvelPageRoute} from '../SPA/comics_page/marvel_page/marvel_page.js';
 import {dcPageRoute} from '../SPA/comics_page/dc_page/dc_page.js';
+import {favoritePageRoute} from '../SPA/favorite_page/favorite_page.js';
+import {shoppingBasketRoute} from '../SPA/shopping_basket/shopping_basket.js';
+import {specificBookPageRoute} from '../SPA/specific_book_page/specific_book_page.js';
 
 const pages = {
     '/home': homePageRoute,
@@ -22,6 +25,9 @@ const pages = {
     '/comics': comicsPageRoute,
     '/marvel': marvelPageRoute,
     '/dc': dcPageRoute,
+    '/favorite': favoritePageRoute,
+    '/basket': shoppingBasketRoute,
+    '/product': specificBookPageRoute
 };
 
 const rootContainer = document.getElementById('root');
@@ -32,10 +38,13 @@ function redirect(route) {
     if(route === '/') {
         route = '/home';
     }
+    if (route.startsWith('/product:')){
+        route = '/product';
+    }
     return route;
 }
 
-function changeRoute(route) {
+export function changeRoute(route) {
     rootContainer.innerHTML = '';
     const pageToMove = pages[route];
     rootContainer.append(pageToMove());

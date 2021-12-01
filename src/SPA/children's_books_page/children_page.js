@@ -17,7 +17,7 @@ export function childrenPageRoute() {
     setTimeout(() => {
         const blockWithCard = new Book('.SPA-page');
         blockWithCard.renderBookCards(createArrayFromGetData());
-        listenerConcreteBook(blockWithCard, childrenDataPath);
+        listenerConcreteBook(childrenDataPath);
     }, 0);
     return fillRootDiv;
 }
