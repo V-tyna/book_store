@@ -14,11 +14,11 @@ function checkout(divElem) {
             const sum = parseFloat(number.slice(0, -1));
             total += sum;
         });
-        total = parseInt(total * 100) / 100;
+        total = parseInt((total * 100).toString()) / 100;
 
-        let itemOrItems = '';
+        let itemOrItems;
 
-        if (JSON.parse(localStorage.getItem('shoppingList')).length == 1){
+        if (JSON.parse(localStorage.getItem('shoppingList')).length === 1){
             itemOrItems = 'book';
         } else {
             itemOrItems = 'books';
