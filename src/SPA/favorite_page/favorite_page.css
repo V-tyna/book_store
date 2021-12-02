@@ -1,4 +1,4 @@
-.fav-list-container {
+.fav-basket-list-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,7 +7,7 @@
     width: 650px;
 }
 
-.fav-list-container div {
+.fav-basket-list-container div {
     margin-right: 15px;
 }
 
