@@ -2,20 +2,20 @@ import {getFromDatabase} from './get_data_from_database.js';
 
 let favoriteListArray;
 
-function addLikesToFavoriteLink() {
+export function addLikesToFavoriteLink() {
     const pLikes = document.querySelector('.likes');
 
     if (!localStorage.getItem('favoriteList')) {
         pLikes.innerText = 0;
     } else {
-        const likes = JSON.parse(localStorage.getItem('favoriteList')).length;
-        pLikes.innerText = likes;
+        pLikes.innerText = JSON.parse(localStorage.getItem('favoriteList')).length;
     }
 }
 
 export async function addBookToFavorite(path) {
     const response = await getFromDatabase(path);
     const book = {
+        id: response.id,
         name: response.bookName,
         authors: response.authors,
         price: response.price,

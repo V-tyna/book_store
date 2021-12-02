@@ -1,9 +1,10 @@
 .fav-list-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     margin: 20px;
+    width: 650px;
 }
 
 .fav-list-container div {
@@ -13,4 +14,23 @@
 .fav-temp-img {
     width: 40px;
     margin-right: 20px;
+}
+
+.fav-btn-delete {
+    font-size: 16px;
+    background-color: #D8C3A5;
+    border: 1px solid #D8C3A5;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.fav-book-name {
+    width: 250px;
+}
+
+.fav-book-authors {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
 }
