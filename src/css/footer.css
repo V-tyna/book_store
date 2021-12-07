@@ -5,7 +5,20 @@ footer {
     min-height: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #EAE7DC;
     margin: 0 auto;
+}
+
+.delivery {
+    margin-top: 20px;
+}
+
+.delivery, .about-us, .contacts {
+    font-family: 'Sanches-bold';
+}
+
+.delivery p, .about-us p, .contacts p {
+    font-family: 'Sanches-regular';
+    font-size: 0.8em;
 }
