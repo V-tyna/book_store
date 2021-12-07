@@ -7,9 +7,12 @@ function favBtnDeleteListener(divElem) {
     const root = document.getElementById('root');
     const favList = JSON.parse(localStorage.getItem('favoriteList'));
     root.addEventListener('click', (e) => {
-        const favBtnDel = e.target;
-        removeFavOrBasketBookFromLS(favBtnDel, favList, 'favoriteList');
-        removeFavOrBasketBookFromPage(divElem, 'favoriteList', addLikesToFavoriteLink);
+        const bookTarget = e.target;
+        const btnDel = e.target.classList.contains('fav-btn-delete');
+        if(btnDel) {
+            removeFavOrBasketBookFromLS(bookTarget, favList, 'favoriteList');
+            removeFavOrBasketBookFromPage(divElem, 'favoriteList', addLikesToFavoriteLink);
+        }
     });
 }
 

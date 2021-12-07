@@ -6,6 +6,7 @@ import './css/SPA_styles.css';
 import './css/specific_book.css';
 import './SPA/favorite_page/favorite_page.css';
 import './SPA/shopping_basket/shopping_basket.css';
+import './SPA/shopping_basket/modal_window/modal_window_styles.css';
 import './modules/routing.js';
 import {initializeApp} from 'firebase/app';
 

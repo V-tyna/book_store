@@ -2,13 +2,16 @@ import shoppingBasket from './shopping_basket.html';
 import {createPage} from '../../modules/routing.js';
 import {removeFavOrBasketBookFromLS, renderFavOrBasketList, removeFavOrBasketBookFromPage} from '../../modules/favorites_basket_utils.js';
 import {addQuantityItemsLink} from '../../modules/buy_button_listener.js';
+import {modalWindowsCreation, waitModalButtons} from './modal_window/modal_window.js';
+
+let total = 0;
 
 function checkout(divElem) {
     const shoppingList = JSON.parse(localStorage.getItem('shoppingList'));
     if (shoppingList.length >= 1) {
         const checkoutHTML = document.createElement('div');
 
-        let total = 0;
+
         shoppingList.forEach(item => {
             const number = item.price.replace(',', '.');
             const sum = parseFloat(number.slice(0, -1));
@@ -34,14 +37,28 @@ function checkout(divElem) {
     }
 }
 
+function checkoutListener() {
+    const root = document.getElementById('root');
+    root.addEventListener('click', (e) => {
+        if(e.target.id === 'checkout-btn'){
+            const modalCheckout = modalWindowsCreation(total);
+            modalCheckout.open();
+            waitModalButtons(modalCheckout);
+        }
+    });
+}
+
 function shoppingBtnDeleteListener(divElem) {
     const root = document.getElementById('root');
     const favList = JSON.parse(localStorage.getItem('shoppingList'));
     root.addEventListener('click', (e) => {
-        const favBtnDel = e.target;
-        removeFavOrBasketBookFromLS(favBtnDel, favList, 'shoppingList');
-        removeFavOrBasketBookFromPage(divElem, 'shoppingList', addQuantityItemsLink);
-        checkout(divElem);
+        const bookTarget = e.target;
+        const btnDel = e.target.classList.contains('fav-btn-delete');
+        if(btnDel){
+            removeFavOrBasketBookFromLS(bookTarget, favList, 'shoppingList');
+            removeFavOrBasketBookFromPage(divElem, 'shoppingList', addQuantityItemsLink);
+            checkout(divElem);
+        }
     });
 }
 
@@ -50,5 +67,6 @@ export function shoppingBasketRoute() {
     renderFavOrBasketList(fillRootDiv, 'shoppingList');
     shoppingBtnDeleteListener(fillRootDiv);
     checkout(fillRootDiv);
+    checkoutListener(fillRootDiv);
     return fillRootDiv;
 }
