@@ -17,7 +17,7 @@ function checkout(divElem) {
             const sum = parseFloat(number.slice(0, -1));
             total += sum;
         });
-        total = parseInt((total * 100).toString()) / 100;
+        total = Number(total.toFixed(2));
 
         let itemOrItems;
 

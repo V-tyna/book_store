@@ -23,9 +23,17 @@
     justify-content: space-around;
 }
 
+.category-menu a:hover {
+    background-color: #EAE7DC;
+    border-radius: 10px;
+}
+
 .category-menu img {
     width: 70px;
     height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
 
 .category-menu a {
@@ -49,6 +57,11 @@
     border-radius: 10px;
 }
 
+.cards-container:hover {
+    background-color: #EAE7DC;
+    border-radius: 10px;
+}
+
 .book-image {
     margin: 0 auto;
 }
@@ -69,6 +82,11 @@
     height: 30px;
     margin-right: 0;
     cursor: pointer;
+}
+
+.add-to-fav:hover{
+    background-color: #fff;
+    border-radius: 50%;
 }
 
 .add-to-basket {
