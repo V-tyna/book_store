@@ -17,7 +17,7 @@
     "pet",
     "project"
   ],
-  "author": "Valentyna Boiko <boikio.vtyna@gmail.com>",
+  "author": "Valentyna Boiko <boiko.vtyna@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.0",
