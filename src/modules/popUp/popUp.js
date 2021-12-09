@@ -2,7 +2,7 @@ function popUpTemplate(eventType) {
     return `
     <div 
     style="background-color: ${eventType.backgroundColor};" 
-    class="pop-up-text">Book was added to ${eventType.text}.
+    class="pop-up-text">${eventType.text}
     </div>
     <div 
     style="border-color: ${eventType.backgroundColor} transparent transparent transparent;"
@@ -10,7 +10,7 @@ function popUpTemplate(eventType) {
     `;
 }
 
-export function renderPopUp(eventType) {
+export function renderPopUp(eventType, delay) {
     const bodyElem = document.querySelector('body');
 
     const popUp = document.createElement('div');
@@ -21,5 +21,5 @@ export function renderPopUp(eventType) {
     }, 300);
     setTimeout(()=> {
         popUp.remove();
-    }, 3000);
+    }, delay);
 }

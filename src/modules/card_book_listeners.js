@@ -5,12 +5,12 @@ import {renderPopUp} from './popUp/popUp.js';
 let pathID;
 
 const favEvent = {
-    text: 'Favorites',
+    text: 'Book was added to Favorites.',
     backgroundColor: '#E98074'
 };
 
 const buyEvent = {
-    text: 'the Shopping Card',
+    text: 'Book was added to the Shopping Card.',
     backgroundColor: '#AFD275'
 };
 
@@ -25,11 +25,11 @@ export function listenerConcreteBook(path) {
         pathID = `${path}/${id}`;
         if(buyButton) {
             buyBook(pathID);
-            renderPopUp(buyEvent);
+            renderPopUp(buyEvent, 3000);
         }
         if(favButton) {
             addBookToFavorite(pathID);
-            renderPopUp(favEvent);
+            renderPopUp(favEvent, 3000);
         }
     });
 }

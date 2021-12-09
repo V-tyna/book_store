@@ -1,3 +1,10 @@
+import {renderPopUp} from '../../../modules/popUp/popUp.js';
+
+const orderEvent = {
+    text: 'The order was placed successfully. Thanks for your purchase!',
+    backgroundColor: '#AFD275'
+};
+
 function modalWindowTemplate(totalSumFunc) {
     const modal = document.createElement('div');
     modal.classList.add('modal');
@@ -41,6 +48,7 @@ export function waitModalButtons(modal) {
         okBtn.addEventListener('click', () => {
             modal.close();
             modal.destroy();
+            renderPopUp(orderEvent, 7000);
             localStorage.removeItem('shoppingList');
             document.getElementById('root').innerHTML = '<div class="empty-basket">There is no books yet</div>';
             document.querySelector('.quantity-items').innerText = '0';
