@@ -2,7 +2,7 @@ import textbooksPage from './textbooks_page.html';
 import {createPage} from '../../modules/routing.js';
 import {Book} from '../../classes/book.js';
 import {getFromDatabase} from '../../modules/get_data_from_database.js';
-import {listenerConcreteBook} from '../../modules/specific_book.js';
+import {listenerConcreteBook} from '../../modules/card_book_listeners.js';
 
 const textbooksDataPath = 'textbooks/programming';
 

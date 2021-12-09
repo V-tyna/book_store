@@ -2,7 +2,7 @@ import horror from './horror_page.html';
 import {createPage} from '../../../modules/routing';
 import {Book} from '../../../classes/book.js';
 import {getFromDatabase} from '../../../modules/get_data_from_database.js';
-import {listenerConcreteBook} from '../../../modules/specific_book.js';
+import {listenerConcreteBook} from '../../../modules/card_book_listeners.js';
 
 const horrorDataPath = 'fiction/horrors';
 

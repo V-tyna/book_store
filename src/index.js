@@ -4,6 +4,7 @@ import './css/footer.css';
 import './SPA/home_page/home_page_styles.css';
 import './css/SPA_styles.css';
 import './css/specific_book.css';
+import './modules/popUp/popUp.css';
 import './SPA/favorite_page/favorite_page.css';
 import './SPA/shopping_basket/shopping_basket.css';
 import './SPA/shopping_basket/modal_window/modal_window_styles.css';
@@ -20,3 +21,13 @@ const firebaseConfig = {
 };
 
 initializeApp(firebaseConfig);
+
+
+function preventDefaultSearch() {
+    const search = document.getElementById('search-form');
+    search.addEventListener('submit', (e) => {
+        e.preventDefault();
+    });
+}
+
+preventDefaultSearch();

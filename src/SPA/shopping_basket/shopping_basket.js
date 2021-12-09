@@ -7,6 +7,7 @@ import {modalWindowsCreation, waitModalButtons} from './modal_window/modal_windo
 let total = 0;
 
 function checkout(divElem) {
+    total = 0;
     const shoppingList = JSON.parse(localStorage.getItem('shoppingList'));
     if (shoppingList.length >= 1) {
         const checkoutHTML = document.createElement('div');

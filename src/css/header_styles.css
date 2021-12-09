@@ -22,6 +22,11 @@ header {
     border-radius: 5px;
 }
 
+#search-form input:focus {
+    border: 1px solid #D9B08C;
+    outline: none;
+}
+
 #btn-search {
     padding: 5px;
     border: 1px solid #D8C3A5;
