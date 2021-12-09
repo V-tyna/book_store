@@ -41,6 +41,9 @@ export function waitModalButtons(modal) {
         okBtn.addEventListener('click', () => {
             modal.close();
             modal.destroy();
+            localStorage.removeItem('shoppingList');
+            document.getElementById('root').innerHTML = '<div class="empty-basket">There is no books yet</div>';
+            document.querySelector('.quantity-items').innerText = '0';
         });
 
         cancelBtn.addEventListener('click', () => {

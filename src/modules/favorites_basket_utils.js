@@ -11,6 +11,10 @@ function favOrBasketItemTemplate(book) {
 export function renderFavOrBasketList(divElem, listName) {
     const favList = JSON.parse(localStorage.getItem(listName));
     divElem.innerHTML = '';
+    if(!favList || favList.length === 0) {
+        document.getElementById('root').innerHTML = '<div class="empty-basket">There is no books yet</div>';
+        return;
+    }
     for(const list of favList) {
         const item = document.createElement('div');
         item.classList.add('fav-basket-list-container');

@@ -9,6 +9,9 @@ let total = 0;
 function checkout(divElem) {
     total = 0;
     const shoppingList = JSON.parse(localStorage.getItem('shoppingList'));
+
+    if (!shoppingList) return;
+
     if (shoppingList.length >= 1) {
         const checkoutHTML = document.createElement('div');
 
