@@ -16,7 +16,6 @@ export function comicsPageRoute() {
     const fillRootDiv = createPage(comicsPage);
     setTimeout(() => {
         const blockWithCard = new Book('.SPA-page');
-        const blockDC = new Book('.dc');
         blockWithCard.renderBookCards(createArrayFromGetData());
         listenerConcreteBook(comicsDataPath);
     }, 0);

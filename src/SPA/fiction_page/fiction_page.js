@@ -3,7 +3,6 @@ import {createPage} from '../../modules/routing.js';
 import {Book} from '../../classes/book.js';
 import {getFromDatabase} from '../../modules/get_data_from_database.js';
 import {listenerConcreteBook} from '../../modules/card_book_listeners.js';
-import {listenerBuyButton} from '../../modules/buy_button_listener.js';
 
 const fictionDataPath = 'fiction/fantasy';
 
