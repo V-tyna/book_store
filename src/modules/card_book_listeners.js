@@ -5,12 +5,12 @@ import {renderPopUp} from './popUp/popUp.js';
 let pathID;
 
 const favEvent = {
-    text: 'Book was added to Favorites.',
+    text: 'The book has been added to Favorites.',
     backgroundColor: '#E98074'
 };
 
 const buyEvent = {
-    text: 'Book was added to the Shopping Card.',
+    text: 'The book has been added to the Shopping Card.',
     backgroundColor: '#AFD275'
 };
 
