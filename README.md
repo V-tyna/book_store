@@ -30,6 +30,7 @@ During the work on project I interacted with Firebase. Books (description, pictu
 - HTML
 - CSS (_flexbox, transition, positioning_)
 - Webpack
+- ESLint
 - Firebase (_hosting, realtime, storage db_)
 - JSON
 - Fetch
